@@ -9,6 +9,8 @@ public abstract class AppRoot implements Runnable {
     public void stop() {
 
         glfwSetWindowShouldClose(window, true);
+        
+        //
 
         //glfwFreeCallbacks(window);
         //glfwDestroyWindow(window);
