@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="573.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controllers.LabFiveController">
+    <children>
+        <Label alignment="CENTER" layoutX="82.0" layoutY="8.0" text="Лабораторная работа по теме 5" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="168.0" layoutY="33.0" text="Задание 7">
+            <font>
+                <Font name="System Italic" size="14.0" />
+            </font>
+        </Label>
+        <Separator layoutX="26.0" layoutY="60.0" prefHeight="6.0" prefWidth="349.0" />
+      <Slider fx:id="ySlider" layoutX="26.0" layoutY="110.0" max="90.0" min="-90.0" prefHeight="17.0" prefWidth="349.0" />
+      <Slider layoutX="26.0" layoutY="182.0" max="360.0" min="-360.0" prefHeight="17.0" prefWidth="349.0" fx:id="xSlider" />
+      <Label layoutX="26.0" layoutY="82.0" text="Вращение по вертикали" />
+      <Label layoutX="26.0" layoutY="155.0" text="Вращение по горизонтали" />
+      <CheckBox fx:id="checkBox" layoutX="26.0" layoutY="222.0" mnemonicParsing="false" text="Поаказать невидимые грани" />
+    </children>
+
+</AnchorPane>

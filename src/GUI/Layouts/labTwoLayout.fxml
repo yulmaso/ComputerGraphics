@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="573.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controllers.LabTwoController">
+   <children>
+      <ScrollPane layoutX="16.0" layoutY="84.0" prefHeight="476.0" prefWidth="368.0">
+         <content>
+            <TableView fx:id="tableView" prefHeight="474.0" prefWidth="366.0">
+              <columns>
+                <TableColumn fx:id="firstColumn" editable="false" prefWidth="75.0" text="X" />
+                <TableColumn fx:id="secondColumn" editable="false" prefWidth="183.0" resizable="false" text="Y" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="168.0" layoutY="33.0" text="Задание 6">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="26.0" layoutY="62.0" prefHeight="6.0" prefWidth="349.0" />
+      <Label alignment="CENTER" layoutX="82.0" layoutY="8.0" text="Лабораторная работа по теме 2" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

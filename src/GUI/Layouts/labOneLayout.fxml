@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="573.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controllers.LabOneController">
+   <children>
+      <AnchorPane layoutY="42.0" minHeight="0.0" minWidth="0.0" prefHeight="628.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="82.0" layoutY="8.0" text="Лабораторная работа по теме 1" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="26.0" layoutY="178.0" prefHeight="6.0" prefWidth="349.0" />
+            <TextField fx:id="angleField" layoutX="207.0" layoutY="76.0" prefHeight="30.0" prefWidth="169.0" promptText="Введите угол" />
+            <Button fx:id="startButton" layoutX="116.0" layoutY="114.0" mnemonicParsing="false" onAction="#startButtonClick" prefHeight="46.0" prefWidth="169.0" text="Построить" />
+            <Separator layoutX="26.0" layoutY="62.0" prefHeight="6.0" prefWidth="349.0" />
+            <Label layoutX="26.0" layoutY="198.0" text="X:" />
+            <Label layoutX="27.0" layoutY="238.0" text="Y:" />
+            <Label layoutX="27.0" layoutY="275.0" text="Z:" />
+            <Slider layoutX="80.0" layoutY="200.0" max="10.0" min="-10.0" prefHeight="17.0" prefWidth="296.0" fx:id="xSlider" />
+            <Slider fx:id="ySlider" layoutX="80.0" layoutY="240.0" max="10.0" min="-10.0" prefHeight="17.0" prefWidth="296.0" />
+            <Slider fx:id="zSlider" layoutX="80.0" layoutY="277.0" max="10.0" min="-10.0" prefHeight="17.0" prefWidth="296.0" />
+            <Separator layoutX="26.0" layoutY="314.0" prefHeight="6.0" prefWidth="349.0" />
+            <ScrollPane layoutX="25.0" layoutY="329.0" prefViewportHeight="224.0" prefViewportWidth="349.0">
+               <content>
+                  <TableView fx:id="tableView" prefHeight="224.0" prefWidth="349.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="firstColumn" prefWidth="75.0" text="axis" />
+                        <TableColumn fx:id="secondColumn" prefWidth="75.0" text="angle" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Label layoutX="168.0" layoutY="33.0" text="Задание 5">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="axisChooser" layoutX="26.0" layoutY="76.0" prefHeight="30.0" prefWidth="169.0" promptText="Выберите ось" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

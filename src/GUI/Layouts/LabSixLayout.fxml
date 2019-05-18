@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="573.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controllers.LabSixController">
+    <children>
+    <Label layoutX="168.0" layoutY="39.0" text="Задание 3">
+        <font>
+            <Font name="System Italic" size="14.0" />
+        </font>
+    </Label>
+    <Separator layoutX="26.0" layoutY="68.0" prefHeight="6.0" prefWidth="349.0" />
+    <Label alignment="CENTER" layoutX="82.0" layoutY="14.0" text="Лабораторная работа по теме 6" textAlignment="CENTER">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+      <Label layoutX="142.0" layoutY="81.0" text="Настройки сцены:" />
+      <Separator layoutX="26.0" layoutY="306.0" prefHeight="6.0" prefWidth="349.0" />
+      <Label layoutX="26.0" layoutY="112.0" text="Поворот по вертикали" />
+      <Label layoutX="26.0" layoutY="170.0" text="Поворот по горизонтали" />
+      <Slider fx:id="verticalSceneSlider" layoutX="26.0" layoutY="132.0" max="90.0" min="-90.0" prefHeight="17.0" prefWidth="349.0" />
+      <Slider fx:id="horizontalSceneSlider" layoutX="26.0" layoutY="190.0" max="360.0" min="-360.0" prefHeight="17.0" prefWidth="349.0" />
+      <Label layoutX="26.0" layoutY="228.0" text="Масштаб" />
+      <Slider fx:id="scaleSlider" layoutX="26.0" layoutY="248.0" min="1.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="349.0" value="1.0" />
+      <Label layoutX="127.0" layoutY="319.0" text="Настройки освещения:" />
+      <Slider fx:id="horizontalLightSlider" layoutX="27.0" layoutY="426.0" max="360.0" min="-360.0" prefHeight="17.0" prefWidth="349.0" />
+      <Slider fx:id="verticalLightSlider" layoutX="27.0" layoutY="368.0" max="90.0" min="16.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="349.0" value="16.0" />
+      <Label layoutX="27.0" layoutY="406.0" text="Поворот по горизонтали" />
+      <Label layoutX="27.0" layoutY="348.0" text="Поворот по вертикали" />
+    </children>
+</AnchorPane>

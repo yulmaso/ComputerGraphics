@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="573.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controllers.LabThreeController">
+   <children>
+      <Label layoutX="168.0" layoutY="39.0" text="Задание 3">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="26.0" layoutY="68.0" prefHeight="6.0" prefWidth="349.0" />
+      <Label alignment="CENTER" layoutX="82.0" layoutY="14.0" text="Лабораторная работа по теме 3" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="92.0" text="Поворот вокруг оси X" />
+      <Slider layoutX="26.0" layoutY="112.0" max="360.0" min="-360.0" prefHeight="17.0" prefWidth="349.0" fx:id="xSlider" />
+      <Slider fx:id="ySlider" layoutX="26.0" layoutY="165.0" max="90.0" min="-90.0" prefHeight="17.0" prefWidth="349.0" />
+      <Label layoutX="26.0" layoutY="145.0" text="Поворот вокруг оси Y" />
+      <Slider fx:id="zSlider" layoutX="26.0" layoutY="218.0" max="90.0" min="-90.0" prefHeight="17.0" prefWidth="349.0" />
+      <Label fx:id="zSliderLabel" layoutX="26.0" layoutY="198.0" text="Поворот вокруг оси Z" />
+      <Label layoutX="26.0" layoutY="257.0" text="Масштаб" />
+      <Slider fx:id="scaleSlider" layoutX="26.0" layoutY="277.0" min="1.0" prefHeight="17.0" prefWidth="349.0" value="10.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="623.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controllers.MenuController">
+   <top>
+      <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeItem" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="openMenu" mnemonicParsing="false" text="Open">
+            <items>
+                  <RadioMenuItem fx:id="labOne" mnemonicParsing="false" text="Lab 1" />
+                  <RadioMenuItem fx:id="labTwo" mnemonicParsing="false" text="Lab 2" />
+                  <RadioMenuItem fx:id="labThree" mnemonicParsing="false" text="Lab 3" />
+                  <RadioMenuItem fx:id="labFour" mnemonicParsing="false" text="Lab 4" />
+                  <RadioMenuItem fx:id="labFive" mnemonicParsing="false" text="Lab 5" />
+                  <RadioMenuItem fx:id="labSix" mnemonicParsing="false" text="Lab 6" />
+            </items>
+          </Menu>
+          <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutItem" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
