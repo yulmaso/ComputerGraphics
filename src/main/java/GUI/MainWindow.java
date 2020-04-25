@@ -27,7 +27,7 @@ public class MainWindow extends Application {
         this.primaryStage.setTitle("Computer Graphics");
 
         initRootLayout();
-        showLabSixOverview();
+        showLabOneOverview();
 
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
             public void handle(WindowEvent we) {
@@ -42,7 +42,7 @@ public class MainWindow extends Application {
     public void initRootLayout() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainWindow.class.getResource("layouts/rootLayout.fxml"));
+            loader.setLocation(MainWindow.class.getResource("/layouts/rootLayout.fxml"));
             rootLayout = loader.load();
 
             MenuController controller = loader.<MenuController>getController();
@@ -59,7 +59,7 @@ public class MainWindow extends Application {
     public void showLabOneOverview() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainWindow.class.getResource("layouts/labOneLayout.fxml"));
+            loader.setLocation(MainWindow.class.getResource("/layouts/labOneLayout.fxml"));
             AnchorPane mainWindow = loader.load();
 
             rootLayout.setCenter(mainWindow);
@@ -75,7 +75,7 @@ public class MainWindow extends Application {
     public void showLabTwoOverview() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainWindow.class.getResource("layouts/labTwoLayout.fxml"));
+            loader.setLocation(MainWindow.class.getResource("/layouts/labTwoLayout.fxml"));
             AnchorPane mainWindow = loader.load();
 
             rootLayout.setCenter(mainWindow);
@@ -90,7 +90,7 @@ public class MainWindow extends Application {
     public void showLabThreeOverview() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainWindow.class.getResource("layouts/labThreeLayout.fxml"));
+            loader.setLocation(MainWindow.class.getResource("/layouts/labThreeLayout.fxml"));
             AnchorPane mainWindow = loader.load();
 
             rootLayout.setCenter(mainWindow);
@@ -103,7 +103,7 @@ public class MainWindow extends Application {
     public void showLabFourOverview() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainWindow.class.getResource("layouts/labFourLayout.fxml"));
+            loader.setLocation(MainWindow.class.getResource("/layouts/labFourLayout.fxml"));
             AnchorPane mainWindow = loader.load();
 
             rootLayout.setCenter(mainWindow);
@@ -116,7 +116,7 @@ public class MainWindow extends Application {
     public void showLabFiveOverview() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainWindow.class.getResource("layouts/labFiveLayout.fxml"));
+            loader.setLocation(MainWindow.class.getResource("/layouts/labFiveLayout.fxml"));
             AnchorPane mainWindow = loader.load();
 
             rootLayout.setCenter(mainWindow);
@@ -129,7 +129,7 @@ public class MainWindow extends Application {
     public void showLabSixOverview() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainWindow.class.getResource("layouts/labSixLayout.fxml"));
+            loader.setLocation(MainWindow.class.getResource("/  layouts/labSixLayout.fxml"));
             AnchorPane mainWindow = loader.load();
 
             rootLayout.setCenter(mainWindow);

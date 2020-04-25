@@ -66,7 +66,7 @@ public class ThreadHandler {
 
     public static void kill(){
         if (appRootThread != null){
-            //appRootThread.interrupt();
+//            appRootThread.interrupt();
             appRoot.stop();
             //
 
