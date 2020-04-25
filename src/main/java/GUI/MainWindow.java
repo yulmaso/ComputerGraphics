@@ -27,6 +27,7 @@ public class MainWindow extends Application {
         this.primaryStage.setTitle("Computer Graphics");
 
         initRootLayout();
+        //TODO::
         showLabOneOverview();
 
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {

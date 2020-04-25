@@ -15,7 +15,7 @@
               <MenuItem fx:id="closeItem" mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
-          <Menu fx:id="openMenu" mnemonicParsing="false" text="Open">
+          <Menu fx:id="openMenu" disable="true" mnemonicParsing="false" text="Open">
             <items>
                   <RadioMenuItem fx:id="labOne" mnemonicParsing="false" text="Lab 1" />
                   <RadioMenuItem fx:id="labTwo" mnemonicParsing="false" text="Lab 2" />
